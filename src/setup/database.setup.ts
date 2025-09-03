@@ -6,6 +6,7 @@ import { Env } from "@/env";
 
 export const AppDataSource = new DataSource({
   type: "mysql",
+  driver: require("mysql2"),
   database: Env.dbName,
   host: Env.host,
   username: Env.username,

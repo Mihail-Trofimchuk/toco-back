@@ -6,6 +6,7 @@ export const dbCreate = async (): Promise<void> => {
     ifNotExist: true,
     options: {
       type: "mysql",
+      driver: require("mysql2"),
       host: Env.host,
       username: Env.username,
       password: Env.password,
