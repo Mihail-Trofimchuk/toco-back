@@ -8,7 +8,7 @@
     "preview": "nodemon dist/index.js",
     "dev": "nodemon src/index.ts",
     "migrate": "typeorm migration:run",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && tsc-alias",
     "test": "jest"
   },
   "keywords": [],
@@ -63,6 +63,7 @@
     "supertest": "^7.0.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
     "tsconfig-paths": "^4.2.0",
     "typeorm-extension": "^3.5.1",
     "typescript": "^5.4.5"
