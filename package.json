@@ -4,6 +4,7 @@
   "description": "Tocos Home Assignment for Full Stack Developer Position",
   "main": "index.ts",
   "scripts": {
+    "start": "node dist/index.js",
     "preview": "nodemon dist/index.js",
     "dev": "nodemon src/index.ts",
     "migrate": "typeorm migration:run",
